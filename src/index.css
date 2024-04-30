@@ -1,13 +1,423 @@
-body {
+*{
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body{
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  scroll-behavior: smooth;
+  overflow: hidden;
+
+ 
+}
+
+/* ---------------------- NAV BAR ---------------------- */
+.nav-bar-section{
+  position: relative;
+  width: 100vh;
+  height: 2vw;
+  transform: rotate(-90deg) translateX(-100%) translateY(100%);
+  transform-origin: top left;
+  z-index: 100;
+}
+.nav-bar-section ul{
+  display: flex;
+  float: left;
+  
+}
+
+.nav-bar-section ul li{
+  list-style: none;
+  margin: 0px 14%;
+}
+
+.nav-bar-section ul li a{
+  text-decoration: none;
+  
+}
+.element-li-list{
+  position: relative;
+  color: white;
+  opacity: 0.29;
+  font-weight: bold;
+  font-size: 2vw;
+  padding: 5px;
+  transform: translateX(-250%);
+}
+.element-li-list:hover{
+opacity: 1;
+
+}
+
+.logo-icon{
+  position: absolute;
+  width: 4vw;
+  top: -40%;
+  
+  transform: rotate(90deg) translateY(70%);
+
+}
+.divisor-nav-bar{
+  position: absolute;
+  width: 100vh;
+  height: 0.2px;
+  background-color: #131324;
+  opacity: 0.5;
+  top: 200%;
+
+}
+/* ---------------------- CONTAINER MAIN ---------------------- */
+.section-container {
+  min-height: 100vh;
+  
+  
+}
+
+.section-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(./assets/background.webp);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: blur(8px) contrast(110%); 
+  z-index: -1; 
+  
+}
+
+/* ----------------------------PHOTOS SECTION -----------*/
+.pieza{
+  position: absolute;
+  left: 35%;
+  bottom: -1%;
+  height: 45vw;
+  z-index: 100;
+}
+.planta{
+  position: absolute;
+  left: 25%;
+  bottom: 20%;
+  height: 30vw;
+  z-index: 50;
+  opacity: 0.2;
+  animation: infinite;
+  animation-name: planta;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate;
+}
+
+@keyframes planta {
+  0% {
+     opacity: 0.2;
+  }
+  100% {
+      opacity:1;
+  }
+}
+
+
+
+/* --------------------------- INTERFACE SKILLS ---------------------------*/
+.container-data-skills{
+  text-align: end;
+  position: absolute;
+  left: 20%;
+  bottom: 15%;
+  transform: translate( 0%, -50%);
+}
+.title-data-skills{
+  font-size: 2vw;
+  color: #8A84CD;
+  opacity: 0.6;
+}
+.element-data-skills{
+  font-size: 1vw;
+  color: aliceblue;
+  opacity: 0.6;
+}
+
+
+/* --------------------------- INTERFACE FRAMEWORK ---------------------------*/
+.container-data-framework{
+  text-align: end;
+  position: absolute;
+  left: 15%;
+  bottom: 40%;
+  transform: translate( 0%, -50%);
+}
+.title-data-framework{
+  font-size: 2vw;
+  color: #8A84CD;
+  opacity: 0.6;
+}
+.element-data-framework{
+  font-size: 1vw;
+  color: aliceblue;
+  opacity: 0.6;
+}
+/* --------------------------- INTERFACE DATABASE ---------------------------*/
+.container-data-database{
+  text-align: end;
+  position: absolute;
+  left: 21%;
+  bottom: 70%;
+  transform: translate( 0%, -50%);
+}
+.title-data-database{
+  font-size: 2vw;
+  color: #8A84CD;
+  opacity: 0.6;
+}
+.element-data-database{
+  font-size: 1vw;
+  color: aliceblue;
+  opacity: 0.6;
+}
+
+/* --------------------------- INTERFACE ABOUT ---------------------------*/
+.container-data-about{
+  text-align: left;
+  position: absolute;
+  left: 68%;
+  bottom: 8%;
+  transform: translate( 0%, -50%);
+}
+.title-data-about{
+  font-size: 4vw;
+  color: #ffffff;
+  opacity: 0.74;
+  margin-bottom: 7%;
+}
+.element-data-gmail{
+  font-size: 1.5vw;
+  color: aliceblue;
+  opacity: 0.74;
+  font-weight: 100;
+  margin-bottom: 8%;
+}
+.icon{
+  width: 1vw;
+  margin: 0 1px;
+  
+}
+.divisor-about{
+  position: absolute;
+  bottom: 25%;
+  width: 25vw;
+  height: 0.2px;
+  background-color: #8A84CD;
+  opacity: 0.5;
+  margin-bottom: 2%;
+}
+.element-data-about{
+  font-size: 1vw;
+  color: aliceblue;
+  opacity: 0.74;
+  max-width: 330px;
+}
+
+
+
+/* ------------------------------------ ENGLISH SPANISH OPTION -----------*/
+.element-data-en{
+  position: absolute;
+  bottom: 2%;
+  right: 6%;
+  color: aliceblue;
+  opacity: 0.29;
+  font-size: 2vw;
+}
+.element-data-en:hover{
+  opacity: 1;
+}
+
+.element-data-es{
+  position: absolute;
+  bottom: 2%;
+  right: 2%;
+  color: aliceblue;
+  opacity: 0.29;
+  font-size: 2vw;
+}
+.element-data-es:hover{
+  opacity: 1;
+}
+
+#section-about {
+  display: block;
+}
+
+
+/*--------------------------------- Section project -----------*/
+#section-project {
+ 
+ width: 100vw;
+ height: 100vw;
+position: absolute;
+top: -1vw;
+}
+
+.background-project {
+  width: 40vw; /* Ancho específico */
+  height: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+  filter: contrast(120%);
+  
+}
+
+.box-project {
+  margin: 1vw 3vw;
+  display:flex;
+  float: left;
+  width: 90vw;
+  height: auto;
+  border-radius: 10px;
+  background-image: linear-gradient(to right, #000000 , #021E2B);
+}
+
+
+.card-body {
+  flex: 1; /* Permite que el cuerpo de la tarjeta ocupe todo el espacio restante */
+  padding: 20px;
+ 
+}
+.title-card{
+  color: #324250;
+  margin-bottom: 1vw;
+}
+.divisor-project{
+  opacity: 0.34;
+  background-color: #8A84CD;
+  width: 25vw;
+  height: 0.2px;
+}
+.container-skills{
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(10px, 1fr));
+gap: 1vw;
+
+}
+.ticket-skills {
+  display: flex;
+  justify-content: center; /* Centra horizontalmente el contenido */
+  align-items: center; /* Centra verticalmente el contenido */
+  text-align: center; /* Centra el texto horizontalmente dentro del elemento */
+  background-image: linear-gradient(to right, #E88400 , #FFBF00);
+  height: 2vw;
+  width: auto;
+  font-size: 1.5vw;
+  padding: 0.2vw 2.5vw;
+  border-radius: 80px;
+  color: #ffffffbb;
+  margin: 1vw 0;
+}
+
+.information-project{
+  color: #ffffff;
+  opacity: 0.43;
+}
+.btn-container{
+  display: flex;
+  justify-content: end;
+  margin-top: 2vw;
+}
+.btn-go-project{
+  background-image: linear-gradient(to right, #2800AD , #000AFD);
+  border: none;
+  border-radius: 80px;
+  color: #ffffffa6;
+  font-size: 1.5vw;
+  width: 20vw;
+  height: 2.5vw;
+}
+
+
+.carrusel {
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  right: -6vw;
+  top: 1vw;
+  padding: 5vw 1vw;
+
+  
+  width: 100vw;
+  height: 90vh;
+
+  display: flex;
+  flex-direction: column;
+
+
+  overflow-y: auto;
+  overflow-x: hidden;
+  
+
+  z-index: 0;
+  margin: 0;
+
+  
+ 
+}
+
+/*-------------------------------- animation -------------------*/
+
+
+/* Agregar transiciones */
+main {
+animation-duration: 3s;
+animation-timing-function: ease-in-out;
+}
+
+.section {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.fade-in {
+  opacity: 1;
+}
+
+.fade-out {
+  opacity: 0;
+}
+
+
+/* CSS */
+@keyframes fadeIn {
+  0% {
+  opacity: 0;
+}
+  100% {
+  opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+0% {
+  opacity: 1;
+}
+60% {
+  opacity: 0;
+}
+}
+.information-project{
+  max-width: 500px;
+}
+
+.HTML5{
+  background-image: linear-gradient(to right, #c61a00 , #ff5e00);
+}
+.CSS3{
+  background-image: linear-gradient(to right, #0099ff , #00cc99);
 }
