@@ -1,0 +1,95 @@
+.container-data-contact{
+    text-align: left;
+    position: absolute;
+    left: 75%;
+    top: 20%;
+    transform: translate( 0%, -20%);
+}
+
+.title-data-contact{
+    font-size: 5vw;
+    letter-spacing: 5px;
+    color: #ffffff;
+    opacity: 0.74;
+}
+.element-data-gmail-contact{
+    font-size: 1.9vw;
+    color: aliceblue;
+    opacity: 0.5;
+    font-weight: 10;
+    margin-bottom: 10%;
+}
+
+.divisor-contact{
+position: absolute;
+top: 20%;
+width: 25vw;
+height: 0.2px;
+background-color: #8A84CD;
+opacity: 0.5;
+}
+
+.element-data-contact{
+    font-size: 1.2vw;
+    color: aliceblue;
+    opacity: 0.5;
+    max-width: 330px;
+}
+
+.input-gmail{
+    background-color: transparent;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    font-size: 1.5vw;
+    border: 1px solid rgb(255, 255, 255, 0.40);   
+    resize: none;
+    width: 100%;
+    height: 2vw;
+    border-radius: 1vw;  
+    margin-bottom: 1vw;
+}
+.input-message {
+    background-color: transparent;
+    color: #ffffff;
+    font-size: 1.5vw;
+    border: 1px solid rgba(255, 255, 255, 0.40);
+    resize: none;
+    width: 100%;
+    height: 15vw;
+    border-radius: 1vw;
+    padding: 0.3vw 1vw;
+    /* Esto es para alinear el texto en la parte superior izquierda */
+    line-height: 1.5; /* Espaciado entre líneas */
+    text-align: left;
+    vertical-align: top;
+}
+
+input:focus{
+    border: rgb(255, 255, 255);
+}
+.title-contact{
+    font-size: 2.3vw;
+    color: aliceblue;
+    opacity: 0.5;
+    margin-bottom: 0.5vw;
+}
+.button-contact{
+    background-color: transparent;
+    color: #ffffff;
+    font-size: 1.5vw;
+    border: 1px solid rgb(255, 255, 255, 0.40);   
+    resize: none;
+    width: 10vw;
+    height: 2vw;
+    border-radius: 1vw;
+    margin-top: 2vw;
+}
+
+.button-contact:hover{
+    border: 1px solid rgb(255, 255, 255, 1); 
+}
+.button-contact:active{
+    transform: scale(0.9);
+}

@@ -421,3 +421,15 @@ animation-timing-function: ease-in-out;
 .CSS3{
   background-image: linear-gradient(to right, #0099ff , #00cc99);
 }
+/*--------------------------------------------------- CONTACT -----------------------------------------------------*/
+
+.section-contact{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: -10vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
