@@ -30,22 +30,22 @@ function Contact() {
             <img src={planta} alt="" className="planta" />
             <div className="container-data-contact">
         
-                <h1 className="title-data-contact">CONTACT</h1>
+                <h1 className="title-data-contact">CONTACTO</h1>
                 <p className="element-data-gmail-contact">
                     gonzaloadamie@gmail.com
                     <img src={copy} alt="" className="icon" onClick={() => copyToClipboard('gonzaloadamie@gmail.com')} />
                     <img src={send} alt="" className="icon" onClick={openGmail} />
                 </p>
-                {copied && <p style={{ fontSize: '1vw', backgroundColor: 'green', padding: '5px', borderRadius: '5px', color: 'white', position: 'absolute', top: '8%', left: '90%' }}>¡Copiado al portapapeles!</p>}
+                {copied && <p style={{ fontSize: '0.7em', backgroundColor: 'green', padding: '5px', borderRadius: '5px', color: 'white', position: 'absolute', top: '10%', left: '73%', width: '11em' }}>¡Copiado al portapapeles!</p>}
                 <div className="divisor-contact"></div>
                 <p className="element-data-contact">Envia tu correo con tu solicitud y en breve respondere, gracias por su tiempo y estare encantado en trabajar con ustedes</p>
                 <div className="form-container">
                 <form action="https://formsubmit.co/gonzaloadamie@gmail.com" method="POST">
                     <p className="title-contact">Email</p>
-                    <input type="email" name="email" required placeholder="Enter Your Email" className="input-gmail" />
-                    <p className="title-contact">Message</p>
-                    <textarea type="text" name="message" required placeholder="Enter Your message" className='input-message' />
-                    <button type="submit" className='button-contact'>SEND</button>
+                    <input type="email" name="email" required placeholder="Introducir email" className="input-gmail" />
+                    <p className="title-contact">Mensaje</p>
+                    <textarea type="text" name="message" required placeholder="Deja tu mensaje" className='input-message' />
+                    <button type="submit" className='button-contact'>ENVIAR</button>
                 </form>
                 </div>
             </div>
