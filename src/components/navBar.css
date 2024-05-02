@@ -1,0 +1,59 @@
+/* ---------------------- NAV BAR ---------------------- */
+.nav-bar-section{
+    position: fixed;
+    width:100vh;
+    height: 2vh;
+    top: -1em;
+    transform: rotate(-90deg) translateX(-40em) translateY(100%);
+    transform-origin: top left;
+    z-index: 100;
+  }
+  .nav-bar-section ul{
+    display: flex;
+    float: left;
+    gap: 4.5em;
+    
+  }
+  
+  .nav-bar-section ul li{
+    list-style: none;
+   
+  }
+  
+  .nav-bar-section ul li a{
+    text-decoration: none;
+    
+  }
+  .element-li-list{
+    position: relative;
+    color: white;
+    opacity: 0.29;
+    font-weight: bold;
+    font-size: 1.7em;
+    padding: 5px;
+  
+  }
+  .element-li-list:hover{
+  opacity: 1;
+  
+  }
+  
+  .logo-icon{
+    position: relative;
+    width: 2em;
+    
+    top: -0.8em;
+    
+    transform: rotate(90deg);
+  
+  }
+  .divisor-nav-bar{
+    position: relative;
+    width: 100vh;
+    height: 0.2px;
+    background-color: #131324;
+    opacity: 0.5;
+    top: 0;
+    transform: rotate(90deg) translateX(20em) translateY(16em);
+  
+  }

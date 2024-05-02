@@ -1,0 +1,150 @@
+#section-home {
+  display: flex;
+  padding-left: 10em;
+}
+/*-----------------------------------------------------------------------------------------------------------*/
+/*{---------------------------------------------- BLOCK SKILLS ----------------------------------------------}*/
+/*-----------------------------------------------------------------------------------------------------------*/
+
+.container-skills {
+  position: relative;
+  width: 15em;
+  height: 30em;
+  display: flex;
+  flex-direction: column;
+  gap: 7em;
+  padding: 1vw;
+  bottom: -1em;
+  right: -2em;
+  transform: translateY(10%);
+}
+.title-data {
+  font-size: 1.6em;
+  color: #8a84cd;
+  opacity: 0.6;
+}
+.element-data {
+  font-size: 1em;
+  color: aliceblue;
+  opacity: 0.6;
+}
+
+/*{  POSITIONS DE LOS ELEMENTOS DE SKILLS}*/
+
+.container-data-database {
+  text-align: end;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4em;
+}
+.container-data-framework {
+  text-align: end;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4em;
+  transform: translateX(-20%);
+}
+.container-data-skills {
+  text-align: end;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4em;
+  transform: translateX(30%);
+}
+
+/*-----------------------------------------------------------------------------------------------*/
+/*{----------------------------    SECCION DE FOTOS DEL ELEMENTO HOME     ----------------------}*/
+/*-----------------------------------------------------------------------------------------------*/
+/*{CONTENEDOR DE LA FOTOS}*/
+.container-photos {
+  position: relative;
+  bottom: -2em;
+  width: 32em;
+  height: 40em;
+  right: -3em;
+  z-index: 10;
+  display: flex;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+}
+
+.pieza {
+  position: relative;
+  bottom: -1%;
+  height: 100%;
+  z-index: 100;
+  left: 20.5em;
+  transform: translateX(-25%);
+}
+.planta {
+  position: relative;
+  height: 65%;
+  z-index: 50;
+  opacity: 0.2;
+  animation: infinite;
+  animation-name: planta;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate;
+
+  transform: translate(-35%, -15%);
+}
+@keyframes planta {
+  0% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 0.4;
+  }
+}
+
+/*-----------------------------------------------------------------------------------------------------------*/
+/*{--------------------------------------- CONTAINER DE LOS ELEMENTOS DE LA SECCION ABOUT  ------------------}*/
+/*-----------------------------------------------------------------------------------------------------------*/
+
+.container-about {
+  position: relative;
+  bottom: -5em;
+  right: 1em;
+  width: 60em;
+  height: 40em;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  z-index: 1000;
+
+}
+
+.title-data-about {
+  display: block;
+  font-size: 3.3em;
+  color: #ffffff;
+  opacity: 0.74;
+  letter-spacing: 3px;
+}
+.element-data-gmail {
+  font-size: 1.5em;
+  color: aliceblue;
+  opacity: 0.74;
+  font-weight: 100;
+}
+.icon {
+  width: 0.7em;
+  margin: 0 1px;
+}
+.divisor-about {
+  width: 22em;
+  height: 0.2px;
+  background-color: #8a84cd;
+  opacity: 0.5;
+}
+.element-data-about {
+  font-size: 1em;
+  color: aliceblue;
+  opacity: 0.74;
+  max-width: 330px;
+}

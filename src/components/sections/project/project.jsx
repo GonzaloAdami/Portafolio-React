@@ -2,7 +2,7 @@ import React from 'react';
 import marketImage from '../../../assets/market.webp';
 import portfolioImage from '../../../assets/portafolio.webp';
 
-
+import './project.css';
 
 class Proyecto {
   constructor(img, titulo, tecnologia, descripcion, url) {
@@ -17,6 +17,7 @@ class Proyecto {
 function Project() {
   
   const proyectos = [
+    
     new Proyecto(marketImage, 'Markets_Analyst', ['JavaScript'], 'Herramienta compacta desarrollada en JavaScript (ECMAScript 2021), empleando la API de Polygon.io. Este proyecto recopila y organiza datos de acciones estadounidenses en tiempo real, permitiendo la identificación de ganancias o pérdidas de manera eficiente.', 'https://github.com/GonzaloAdami/Market_Analyst/blob/main/Market_Analyst.js'),
     new Proyecto(portfolioImage, 'Portafolio', ['JavaScript', 'HTML5', 'CSS3'], 'He creado un portafolio web semántico y adaptable utilizando las tecnologías HTML5 y CSS3, junto con código JavaScript (ECMAScript 2021) escalable. Esta implementación no solo se centra en el diseño visual, sino que también considera una experiencia de usuario fluida y agradable (UX/UI), optimización para motores de búsqueda (SEO), y un manejo eficiente de múltiples idiomas. Además, el diseño incorpora una estructura de información optimizada, con una jerarquía de relevancia cuidadosamente planificada para facilitar la comprensión y navegación del contenido.', 'https://github.com/GonzaloAdami/Market_Analyst/blob/main/Market_Analyst.js'),
   ];
@@ -41,7 +42,7 @@ function Project() {
                   <div className="card-body">
                     <h1 className="title-card">{proyecto.titulo}</h1>
                     <div className="divisor-project"></div>
-                    <div className="container-skills">
+                    <div className="container-skills-project">
                       {proyecto.tecnologia.map((tech, index) => (
                         <div key={index} className={`ticket-skills ${tech}`}>{tech}</div>
                       ))}

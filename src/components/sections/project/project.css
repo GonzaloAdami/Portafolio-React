@@ -1,0 +1,106 @@
+/*--------------------------------- Section project -----------*/
+#section-project {
+    position: relative;
+    width: 100vw;
+    height: 100vw;
+   
+   
+   
+}
+
+
+.carrusel-content{
+display: flex;
+flex-direction: column;
+gap: 0.2em;
+padding-bottom: 2em;
+}
+.box-project {
+    position: relative;
+    display:flex;
+    float: left;
+    width: 75em;
+    height: auto;
+    border-radius: 10px;
+    background-image: linear-gradient(to right, #000000 , #021E2B);
+    transform: scale(0.9);
+}
+
+.background-project {
+    width: 33em; 
+    height: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    filter: contrast(120%);
+    
+  }
+.card-body {
+  flex: 1;
+  padding: 20px;
+ 
+}
+.title-card{
+  color: #324250;
+  margin-bottom: 0.7em;
+}
+.divisor-project{
+  opacity: 0.34;
+  background-color: #8A84CD;
+  width: 25em;
+  height: 0.2px;
+}
+.container-skills-project{
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(10px, 1fr));
+gap: 1em;
+
+}
+.ticket-skills {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  text-align: center; 
+  background-image: linear-gradient(to right, #E88400 , #FFBF00);
+  height: 1.3em;
+  width: auto;
+  font-size: 1.4em;
+  padding: 0.2em 2.5em;
+  border-radius: 80px;
+  color: #ffffffbb;
+  margin: 1vw 0;
+}
+
+.information-project{
+  color: #ffffff;
+  opacity: 0.43;
+}
+.btn-container{
+  display: flex;
+  justify-content: end;
+  margin-top: 1em;
+}
+.btn-go-project{
+  background-image: linear-gradient(to right, #2800AD , #000AFD);
+  border: none;
+  border-radius: 80px;
+  color: #ffffffa6;
+  font-size: 1.5em;
+  width: 15em;
+  height: 1.5em;
+}
+
+
+.carrusel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 85em;
+    height: 45em;
+   
+    overflow-y: auto;
+    overflow-x: hidden;
+    z-index: 0;
+    
+}
