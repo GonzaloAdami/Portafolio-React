@@ -28,15 +28,17 @@ function Contact() {
         <div className="section-contact">
             <img src={pieza} alt="" className="pieza" />
             <img src={planta} alt="" className="planta" />
+
+
+
             <div className="container-data-contact">
-        
                 <h1 className="title-data-contact">CONTACTO</h1>
                 <p className="element-data-gmail-contact">
                     gonzaloadamie@gmail.com
                     <img src={copy} alt="" className="icon" onClick={() => copyToClipboard('gonzaloadamie@gmail.com')} />
                     <img src={send} alt="" className="icon" onClick={openGmail} />
                 </p>
-                {copied && <p style={{ fontSize: '0.7em', backgroundColor: 'green', padding: '5px', borderRadius: '5px', color: 'white', position: 'absolute', top: '10%', left: '73%', width: '11em' }}>¡Copiado al portapapeles!</p>}
+                {copied && <p style={{ fontSize: '1em', backgroundColor: 'green', padding: '7px', borderRadius: '5px', color: 'white', position: 'absolute', top: '16%', right: '26%', width: '15em' }}>¡Copiado al portapapeles!</p>}
                 <div className="divisor-contact"></div>
                 <p className="element-data-contact">Envia tu correo con tu solicitud y en breve respondere, gracias por su tiempo y estare encantado en trabajar con ustedes</p>
                 <div className="form-container">
@@ -49,6 +51,9 @@ function Contact() {
                 </form>
                 </div>
             </div>
+
+
+
         </div>
     </>
   );

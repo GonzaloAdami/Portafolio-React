@@ -35,7 +35,7 @@ function Home() {
                     <article className="container-data-framework">
                         <h1 className="title-data">FRAMEWORK</h1>
                         <p className="element-data">Angular 17</p>
-                        <p className="element-data">React 18.1</p>
+                        <p className="element-data">React 18.2.0</p>
                     </article>
 
                     <article className="container-data-skills">

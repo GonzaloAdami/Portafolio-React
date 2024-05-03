@@ -125,12 +125,7 @@ animation-timing-function: ease-in-out;
   max-width: 500px;
 }
 
-.HTML5{
-  background-image: linear-gradient(to right, #c61a00 , #ff5e00);
-}
-.CSS3{
-  background-image: linear-gradient(to right, #0099ff , #00cc99);
-}
+
 /*--------------------------------------------------- CONTACT -----------------------------------------------------*/
 
 .section-contact{
